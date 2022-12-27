@@ -13,7 +13,7 @@
       ],
       "DownstreamPathTemplate": "/api/Account"
 
-    }
+    },
     // Customer Web API
     {
       "UpstreamPathTemplate": "/api/Customer",
@@ -51,7 +51,22 @@
           "Port": 80
         }
       ],
-      "DownstreamPathTemplate": "/api/Product"
+      "DownstreamPathTemplate": "/api/Product",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowScopes": []
+      }
+      //,
+      //"RouteClaimsRequirement": {
+      //  "Role": "Administrator",
+      //}
+
+      //,
+      //"RateLimitOptions": {
+      //  "ClientWhitelist": [],
+      //  "EnableRateLimiting": true,
+      //  "Period": "60s",
+      //}
     },
     {
       "UpstreamPathTemplate": "/api/Product/{productId}",
@@ -63,7 +78,11 @@
           "Port": 80
         }
       ],
-      "DownstreamPathTemplate": "/api/Product/{productId}"
+      "DownstreamPathTemplate": "/api/Product/{productId}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowScopes": []
+      }
     },
 
     // Order Web API
