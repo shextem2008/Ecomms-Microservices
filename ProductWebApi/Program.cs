@@ -17,8 +17,6 @@ var dbPassword = Environment.GetEnvironmentVariable("DB_ROOT_PASSWORD");
 //var dbName2 = Environment.GetEnvironmentVariable("DB_NAME");
 //var dbPassword2 = Environment.GetEnvironmentVariable("DB_ROOT_PASSWORD");
 
-
-
 //for local machine
 //var dbHost = "localhost";
 //var dbName = "Ecoms_b_Product";

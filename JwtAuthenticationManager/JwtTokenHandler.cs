@@ -6,8 +6,6 @@ using System.Text;
 
 namespace JwtAuthenticationManager
 {
-
-
     public class JwtTokenHandler
     {
         public const string JWT_SECURITY_KEY = "ydf2345sdfgh2345olkjioklm456jkgsdf456JD";
